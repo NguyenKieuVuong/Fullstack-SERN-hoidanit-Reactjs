@@ -1,0 +1,57 @@
+.page-view {
+  padding-top: 3rem;
+  min-height: 100vh;
+  background: #00d2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3a7bd5,
+    #00d2ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3a7bd5,
+    #00d2ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  .block-login {
+    margin: 0 auto;
+    max-width: 400px;
+    .block-main {
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 1rem;
+      .form-input-password {
+        position: relative;
+        .btn-show-password {
+          position: absolute;
+          right: 2px;
+          top: 5px;
+          border: 0px;
+        }
+      }
+      .btn {
+        display: block;
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .social-login {
+        display: flex;
+        button {
+          width: 47.5%;
+          border: 0px;
+          margin-bottom: 3rem;
+          &.login-facebook {
+            background-color: #00d2ff;
+            color: #fff;
+            margin-right: 5%;
+          }
+          &.login-google {
+            background-color: #3a7bd5;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
